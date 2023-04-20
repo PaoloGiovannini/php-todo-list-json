@@ -14,7 +14,9 @@
     <div id="app">
         <div class="container">
             <ul class="list-group">
-                <li class="list-group-item list-group-item-success" v-for="todo in toDoList">{{todo.text}}</li>
+                <li class="list-group-item list-group-item-success" v-for="todo in toDoList">
+                    <span :class="todo.done == true ? 'text-decoration-line-through' : ''">{{todo.text}}</span>
+                </li>
             </ul>
             <input type="text" placeholder="Inserisci cosa da fare" v-model="singleToDo">
             <button class="btn btn-success" @click="addToDo">Invia</button>

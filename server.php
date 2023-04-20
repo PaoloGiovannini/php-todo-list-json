@@ -3,7 +3,7 @@
 $toDoList = [
     [
         'text' => 'Giocare a pallone',
-        'done' => false
+        'done' => true
     ],
     [
         'text' => 'Comprare la ps5',
