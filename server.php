@@ -7,6 +7,10 @@ if (file_exists('database.json')) {
     $toDoList = [];
 }
 
+if(empty($toDoList)){
+    $toDoList = [];
+}
+
 if (isset($_POST['element']) && $_POST['element'] !== '') {
 
     $toDo = [
