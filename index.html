@@ -18,7 +18,7 @@
                     <span :class="todo.done == true ? 'text-decoration-line-through' : ''">{{todo.text}}</span>
                 </li>
             </ul>
-            <input type="text" placeholder="Inserisci cosa da fare" v-model="singleToDo">
+            <input type="text" placeholder="Inserisci cosa da fare" v-model="singleToDo" @keyup.enter="addToDo">
             <button class="btn btn-success" @click="addToDo">Invia</button>
         </div>
 

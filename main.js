@@ -26,7 +26,7 @@ createApp({
       ).then(response => {
         this.toDoList = response.data;
         this.singleToDo = '';
-        console.log(response);
+        console.log(response.data);
       });
 
     }
